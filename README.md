@@ -23,9 +23,11 @@ Positions on the board are labeled with the numbers 1, 2, and 3, used for the th
 A1	B1	C1<br />
 A2	B2	C2<br />
 A3	B3	C3<br />
-## User Input.<br />  When a user enters a position, they must use the above format exactly. You are required to check any position a user provides to ensure it properly defines a valid position. If it does not, you should tell the user the position is invalid, and ask them to enter a new, correct position.
-Even if the position provided by the user is in the correct format, it may still be invalid (e.g., if the position is already taken). After confirming the position's format is correct, you must then check to ensure the position itself is available. If not, you would again report the issue to the user and ask them to provide a new, valid position.<br />
-Input from the keyboard can be requested using Python's input() function.
+## User Input.
+When a user enters a position, they must use the above format exactly. You are required to check any position a user provides to ensure it properly defines a valid position. If it does not, you should tell the user the position is invalid, and ask them to enter a new, correct position.<br />  
+Even if the position provided by the user is in the correct format, it may still be invalid (e.g., if the position is already taken).<br />  
+After confirming the position's format is correct, you must then check to ensure the position itself is available. If not, you would again report the issue to the user and ask them to provide a new, valid position.<br />
+Input from the keyboard can be requested using Python's input() function.<br />  
 position = input( "Choose a position: " )
 print( position )
 input() allows a user to enter characters from the keyboard, then returns the result as a string. This can be assigned to a variable for further processing.
