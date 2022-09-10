@@ -18,13 +18,13 @@ The game loop for a tic-tac-toe game is fairly simple.
 5.	Placement alternates until a player wins or the board is full, at which point the game is called for a tie.
 The reason you would break down the game like this isn't because you don't know tic-tac-toe, but because this gives you a fairly good idea of what you need to do to program Python to play a tic-tac-toe game. This is a common strategy for larger programs, take each problem and break it down into a sequence of sub-problems until you feel comfortable that you understand how to write code to solve each sub-problem. If our breakdown above is still too high level, keep decomposing it until to get to a point where you feel like you understand how to convert each description into a corresponding block of code.
 Interface
-Board Positions.  Because we'll be marking your programs electronically, there is a very specific way that positions on the board are labeled, and in how your program should accept the positions as input to update your tic-tac-toe board.
-Positions on the board are labeled with the numbers 1, 2, and 3, used for the three rows, top to bottom, and the letters A, B, and C, used for the three columns, left to right. So, for example, the top-left position is A1, and the bottom-left position is C3. The entire board has positions labeled like this.
+Board Positions.<br />  Because we'll be marking your programs electronically, there is a very specific way that positions on the board are labeled, and in how your program should accept the positions as input to update your tic-tac-toe board.<br />
+Positions on the board are labeled with the numbers 1, 2, and 3, used for the three rows, top to bottom, and the letters A, B, and C, used for the three columns, left to right. So, for example, the top-left position is A1, and the bottom-left position is C3. The entire board has positions labeled like this.<br />
 A1	B1	C1
-A2	B2	C2
-A3	B3	C3
+A2	B2	C2<br />
+A3	B3	C3<br />
 User Input.  When a user enters a position, they must use the above format exactly. You are required to check any position a user provides to ensure it properly defines a valid position. If it does not, you should tell the user the position is invalid, and ask them to enter a new, correct position.
-Even if the position provided by the user is in the correct format, it may still be invalid (e.g., if the position is already taken). After confirming the position's format is correct, you must then check to ensure the position itself is available. If not, you would again report the issue to the user and ask them to provide a new, valid position.
+Even if the position provided by the user is in the correct format, it may still be invalid (e.g., if the position is already taken). After confirming the position's format is correct, you must then check to ensure the position itself is available. If not, you would again report the issue to the user and ask them to provide a new, valid position.<br />
 Input from the keyboard can be requested using Python's input() function.
 position = input( "Choose a position: " )
 print( position )
